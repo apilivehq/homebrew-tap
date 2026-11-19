@@ -7,8 +7,7 @@ cask "api-live" do
   version "0.1.0"
   sha256 "be7dbb9b4187e3652e9e2464fb3ba8ca80757abd9f8d70720fa84f3cad9d9337"
 
-  url "https://github.com/apilivehq/apilive/releases/download/v#{version}/api.live_#{version}_universal.dmg",
-      verified: "github.com/apilivehq/apilive/"
+  url "https://github.com/apilivehq/apilive/releases/download/v#{version}/api.live_#{version}_universal.dmg"
   name "api.live"
   desc "Local-first API workbench, API simulator and load generator"
   homepage "https://api.live"
@@ -18,7 +17,7 @@ cask "api-live" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "api.live.app"
 
